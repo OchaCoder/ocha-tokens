@@ -1,6 +1,8 @@
 import CopyButton from "@/components/CopyButton"
 import { V4 } from "paseto"
 
+export const dynamic = "force-dynamic" // ✅ Disables static generation
+
 export default async function Home() {
   const paseto = await V4.generateKey("public", { format: "paserk" })
 
